@@ -1,6 +1,6 @@
 #! /bin/bash
 
-GIT_INIT_PATH=$(echo -e "${GIT_INIT_PATH:=~/.local/share/gitignore}")
+GIT_INIT_PATH=$(echo "${GIT_INIT_PATH:=$HOME/.local/share/gitignore}")
 
 help() {
 
