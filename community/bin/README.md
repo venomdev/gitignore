@@ -61,11 +61,11 @@ The default path is ~/.local/share/gitignore
 
 ```
 
-Setting the environment variable GIT_INIT_EXTRAS_FOLDER will create a .extras folder to store files
+Setting the environment variable GIT_INIT_FOLDER_EXTRAS will create a .extras folder to store files
 that may be useful to keep locally but the git repository should ignore.
 
 ```
-    export GIT_INIT_EXTRAS_FOLDER=true
+    export GIT_INIT_FOLDER_EXTRAS=true
 ```
 
 ## Requirements

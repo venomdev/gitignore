@@ -17,7 +17,7 @@ help() {
     echo -e "The GIT_INIT_PATH sets the path that the github/gitignore repository is stored in."
     echo -e "The default path is ~/.local/share/gitignore\n"
 
-    echo -e "Setting the environment variable GIT_INIT_EXTRAS_FOLDER will create a .extras folder to store files"
+    echo -e "Setting the environment variable GIT_INIT_FOLDER_EXTRAS will create a .extras folder to store files"
     echo -e "that may be useful to keep locally but the git repository should ignore.\n"
 
     exit
@@ -60,7 +60,7 @@ gitignore () {
 
 gitextras () {
 
-    if [ -n "$GIT_INIT_EXTRAS_FOLDER" ]; then 
+    if [ -n "$GIT_INIT_FOLDER_EXTRAS" ]; then 
 
         mkdir -p $(pwd)/.extras    
         echo -e "\n\n# Extra files kept locally but ignored in the repository\n.extras/\n" >> .gitignore
